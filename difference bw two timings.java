@@ -25,7 +25,7 @@ public class Time_difference {
         h=h*60+m;
         h1=h1*60+m1;
         int dif=h1-h;
-        if(dif>=60)
+        if(dif<0||dif>=60)
         {
             h=dif/60;
             h1=dif%60;
@@ -36,7 +36,9 @@ public class Time_difference {
         {
             System.out.println(Math.abs(dif)+"mins");
         }
- 
+        
+        // TODO code application logic here
     }
     
 }
+
